@@ -26,11 +26,12 @@
       display: flex;
       justify-content: center;
       padding: 30px 16px;
+      background-image: url(images/download.jfif);
     }
 
     .container {
       width: 100%;
-      max-width: 680px;
+      max-width: 650px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -78,6 +79,10 @@
       gap: 14px;
     }
 
+    .link-icon {
+      color: #f90eda;
+    }
+
     .link {
       position: relative;
       width: 100%;
@@ -108,7 +113,7 @@
     .link:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-      background: #fafafa;
+      background: #836177;
     }
 
     .link:active {
@@ -246,11 +251,18 @@
     transform: scale(1.05);
   }
 
+  .socials a {
+    color: #f90eda;
+  }
+
+  body.dark-mode .socials a {
+    color: #ffffff;
+  }
 
   /* DARK MODE */
 
   body.dark-mode {
-    background: #111111;
+    background-image: url(images/download-2.jfif);
     color: #ffffff;
   }
 
@@ -261,6 +273,10 @@
   body.dark-mode .link {
     background: #ec7fda;
     border-color: #2c2c2c;
+    color: #ffffff;
+  }
+
+  body.dark-mode .link-icon {
     color: #ffffff;
   }
 
@@ -325,7 +341,7 @@
         rel="noopener noreferrer"
       >
         <span class="link-icon">
-          <i class="bi bi-globe2" style="color: #f90eda;"></i>
+          <i class="bi bi-globe2"></i>
         </span>
 
         <span>
@@ -344,7 +360,7 @@
         rel="noopener noreferrer"
       >
         <span class="link-icon">
-          <i class="bi bi-substack" style="color: #f90eda;"></i>
+          <i class="bi bi-substack"   ></i>
         </span>
 
         <span>
@@ -365,7 +381,7 @@
         rel="noopener noreferrer"
       >
         <span class="link-icon">
-          <i class="bi bi-facebook" style="color: #f90eda;"></i>
+          <i class="bi bi-facebook"   ></i>
         </span>
 
         <span>
@@ -373,7 +389,7 @@
         </span>
 
         <span class="link-menu">
-          <i class="bi bi-three-dots" style="color: #f90eda;"></i>
+          <i class="bi bi-three-dots"   ></i>
         </span>
       </a>
 
@@ -386,7 +402,7 @@
         rel="noopener noreferrer"
       >
         <span class="link-icon">
-          <i class="fa-brands fa-hashnode" style="color: #f90eda;"></i>
+          <i class="fa-brands fa-hashnode"   ></i>
         </span>
 
         <span>
@@ -402,10 +418,10 @@
       <!-- EMAIL -->
       <a
         class="link"
-        href="https://x.com/yolanda__mbande"
+        href="https://x.com/yolanda__mbande" target="_blank"
       >
         <span class="link-icon">
-          <i class="bi bi-twitter-x" style="color: #f90eda;"></i>
+          <i class="bi bi-twitter-x"   ></i>
         </span>
 
         <span>
@@ -429,7 +445,7 @@
         rel="noopener noreferrer"
         aria-label="Instagram"
       >
-        <i class="bi bi-instagram" style="color: #f90eda;"></i>
+        <i class="bi bi-instagram"   ></i>
       </a>
 
       <a
@@ -438,14 +454,14 @@
         rel="noopener noreferrer"
         aria-label="GitHub"
       >
-        <i class="bi bi-github" style="color: #f90eda;"></i>
+        <i class="bi bi-github"   ></i>
       </a>
 
       <a
         href="mailto:y_mbande@icloud.com"
         aria-label="Email"
       >
-        <i class="bi bi-envelope" style="color: #f90eda;"></i>
+        <i class="bi bi-envelope"   ></i>
       </a>
 
     </div>
