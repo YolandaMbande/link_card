@@ -73,7 +73,7 @@ body {
 }
 
 .link-icon {
-  color: #f90eda;
+  color: #655e64;
 }
 
 .link {
@@ -157,7 +157,7 @@ body {
 }
 
 .socials a {
-  color: #f90eda;
+  color: #4f484e;
   font-size: 21px;
   text-decoration: none;
   transition: transform 0.2s ease, opacity 0.2s ease;
@@ -225,7 +225,7 @@ body.dark-mode .profile-bio {
 }
 
 body.dark-mode .link {
-  background: #ec7fda;
+  background: #594b57;
   border-color: #2c2c2c;
   color: #ffffff;
 }
@@ -235,7 +235,7 @@ body.dark-mode .link-icon {
 }
 
 body.dark-mode .link:hover {
-  background: #eb04b9;
+  background: #f2a7e2;
 }
 
 body.dark-mode .link-menu {
