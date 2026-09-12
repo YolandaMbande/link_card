@@ -1,5 +1,5 @@
 # Personal Link Page
-
+ 
 A simple, responsive personal link page inspired by Linktree, built with HTML, CSS, and JavaScript.
 
 This page serves as a central hub for my social media profiles, developer platforms, portfolio, and contact information.
