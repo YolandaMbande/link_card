@@ -1,5 +1,14 @@
 # Personal Link Page
 
+<a href="https://yolanda-links.vercel.app/">
+  <img 
+    width="959" 
+    height="472" 
+    alt="Personal Link Page website preview" 
+    src="side-by-side-collage.jpg"
+  />
+</a>
+
 A simple, responsive personal link page inspired by Linktree, built with HTML, CSS, and JavaScript.
 
 This page serves as a central hub for my social media profiles, developer platforms, portfolio, and contact information.
