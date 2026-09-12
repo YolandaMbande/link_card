@@ -1,6 +1,6 @@
 # Personal Link Page
 
-"<img src="images/screenshot.png" alt="Project Screenshot" width="600">
+"<img src="side-by-side-collage.jpg" alt="Project Screenshot" width="600">
 
 A simple, responsive personal link page inspired by Linktree, built with HTML, CSS, and JavaScript.
 
