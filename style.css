@@ -102,7 +102,7 @@ body {
 
 .link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-shadow:  0 0 15px rgba(255, 255, 255, 0.7);
   background: #836177;
 }
 
@@ -222,7 +222,7 @@ body.dark-mode .profile-bio {
 }
 
 body.dark-mode .link {
-  background: #594b57;
+  background: transparent;
   border-color: #2c2c2c;
   color: #ffffff;
 }
@@ -232,7 +232,8 @@ body.dark-mode .link-icon {
 }
 
 body.dark-mode .link:hover {
-  background: #f2a7e2;
+    background: transparent;
+    box-shadow: 0 0 10px #fff, 0 0 25px #fff;
 }
 
 body.dark-mode .link-menu {
