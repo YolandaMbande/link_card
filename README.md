@@ -12,7 +12,7 @@ This page serves as a central hub for my social media profiles, developer platfo
 ## 📸 Website Preview
 
 <a href="https://yolanda-links.vercel.app/">
-  <img width="959" height="472" alt="Personal Link Page website preview" src="side-by-side-collage.jpg" />
+  <img src="images/demo.gif" width="600">
 </a>
 
 ## Features
