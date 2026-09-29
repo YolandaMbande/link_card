@@ -1,93 +1,178 @@
+/* =========================
+   RESET
+========================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+
+/* =========================
+   BODY
+========================= */
+
 body {
   min-height: 100vh;
+
   font-family: Arial, Helvetica, sans-serif;
-  background: #f5f5f5;
+
   color: #111;
+
   display: flex;
   justify-content: center;
+
   padding: 30px 16px;
 
   /* PC LIGHT */
+  background-color: #f5f5f5;
   background-image: url("images/background-pc-light.jfif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* CONTAINER */
+
+/* =========================
+   CONTAINER
+========================= */
 
 .container {
   width: 100%;
   max-width: 650px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* PROFILE */
+
+/* =========================
+   PROFILE
+========================= */
 
 .profile {
+  position: relative;
+
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   text-align: center;
-  margin-bottom: 28px;
+
+  margin-bottom: 32px;
 }
 
-.profile-image {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
+
+/* COVER PHOTO */
+
+.cover-photo {
+  width: 100%;
+  height: 230px;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cover-photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
   object-fit: cover;
-  margin-bottom: 14px;
-  border: 3px solid #f90eda;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  object-position: center;
+}
+
+
+/* PROFILE PICTURE */
+
+.profile-image {
+  position: relative;
+
+  width: 170px;
+  height: 170px;
+
+  margin-top: -90px;
+  margin-bottom: 16px;
+
+  border-radius: 80%;
+
+  object-fit: cover;
+
+  border: 5px solid #f90eda;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
+
+  z-index: 2;
+}
+
+
+/* PROFILE INFO */
+
+.profile-info {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-name {
-  font-size: 20px;
+  margin-bottom: 7px;
+
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 6px;
 }
 
 .profile-bio {
+  max-width: 430px;
+
   font-size: 14px;
-  color: #e9e5e5;
-  max-width: 400px;
   line-height: 1.5;
+
+  color: #e9e5e5;
 }
 
-/* LINKS */
+
+/* =========================
+   LINKS
+========================= */
 
 .links {
   width: 100%;
+
   display: flex;
   flex-direction: column;
-  gap: 14px;
-}
 
-.link-icon {
-  color: #655e64;
+  gap: 14px;
 }
 
 .link {
   position: relative;
+
   width: 100%;
   min-height: 60px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   padding: 14px 55px;
 
   background: rgba(202, 195, 195, 0.25);
+
   color: #111;
+
   text-decoration: none;
+
   border: 1px solid rgba(29, 29, 29, 0.5);
   border-radius: 12px;
 
@@ -102,7 +187,9 @@ body {
 
 .link:hover {
   transform: translateY(-2px);
-  box-shadow:  0 0 15px rgba(255, 255, 255, 0.7);
+
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+
   background: #836177;
 }
 
@@ -110,7 +197,10 @@ body {
   transform: translateY(0);
 }
 
-/* ICON */
+
+/* =========================
+   LINK ICON
+========================= */
 
 .link-icon {
   position: absolute;
@@ -123,10 +213,15 @@ body {
   align-items: center;
   justify-content: center;
 
+  color: #655e64;
+
   font-size: 19px;
 }
 
-/* THREE DOTS */
+
+/* =========================
+   THREE DOTS
+========================= */
 
 .link-menu {
   position: absolute;
@@ -140,44 +235,66 @@ body {
   justify-content: center;
 
   color: #777;
+
   font-size: 18px;
 }
 
-/* SOCIAL ICONS */
+
+/* =========================
+   SOCIAL ICONS
+========================= */
 
 .socials {
   display: flex;
   justify-content: center;
   align-items: center;
+
   gap: 20px;
+
   margin-top: 30px;
 }
 
 .socials a {
   color: #f0edef;
+
   font-size: 21px;
+
   text-decoration: none;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .socials a:hover {
   transform: scale(1.1);
+
   opacity: 0.65;
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 .footer {
   margin-top: 30px;
+
   font-size: 12px;
+
   color: #efebeb;
+
   text-align: center;
 }
 
-/* THEME TOGGLE */
+
+/* =========================
+   THEME TOGGLE
+========================= */
 
 .theme-toggle {
   position: fixed;
+
   top: 20px;
   right: 20px;
 
@@ -198,6 +315,8 @@ body {
 
   cursor: pointer;
 
+  z-index: 100;
+
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
 
   transition:
@@ -210,10 +329,14 @@ body {
   transform: scale(1.05);
 }
 
-/* DARK MODE */
+
+/* =========================
+   DARK MODE
+========================= */
 
 body.dark-mode {
   background-image: url("images/background-pc-dark.jfif");
+
   color: #ffffff;
 }
 
@@ -223,7 +346,9 @@ body.dark-mode .profile-bio {
 
 body.dark-mode .link {
   background: transparent;
+
   border-color: #2c2c2c;
+
   color: #ffffff;
 }
 
@@ -232,8 +357,11 @@ body.dark-mode .link-icon {
 }
 
 body.dark-mode .link:hover {
-    background: transparent;
-    box-shadow: 0 0 10px #fff, 0 0 25px #fff;
+  background: transparent;
+
+  box-shadow:
+    0 0 10px #fff,
+    0 0 25px #fff;
 }
 
 body.dark-mode .link-menu {
@@ -250,10 +378,14 @@ body.dark-mode .footer {
 
 body.dark-mode .theme-toggle {
   background: #242424;
+
   color: #ffffff;
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 600px) {
 
@@ -265,7 +397,9 @@ body.dark-mode .theme-toggle {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
+
 
   /* PHONE DARK */
 
@@ -273,26 +407,47 @@ body.dark-mode .theme-toggle {
     background-image: url("images/phone-dark.jfif");
   }
 
+
+  /* PROFILE */
+
   .profile {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
+  }
+
+  .cover-photo {
+    height: 180px;
+
+    border-radius: 18px;
   }
 
   .profile-image {
-    width: 88px;
-    height: 88px;
+    width: 145px;
+    height: 145px;
+
+    margin-top: -75px;
+    margin-bottom: 14px;
+
+    border-width: 4px;
   }
 
   .profile-name {
-    font-size: 19px;
+    font-size: 24px;
   }
 
   .profile-bio {
+    max-width: 320px;
+
     font-size: 13px;
   }
 
+
+  /* LINKS */
+
   .link {
     min-height: 58px;
+
     font-size: 14px;
+
     border-radius: 10px;
   }
 }
