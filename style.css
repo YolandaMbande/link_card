@@ -127,9 +127,10 @@ body {
 
 .profile-name {
   margin-bottom: 7px;
-
+  color: #F3B6CE;
   font-size: 28px;
   font-weight: 700;
+  background-color: #8282827d;
 }
 
 .profile-bio {
@@ -137,8 +138,8 @@ body {
 
   font-size: 14px;
   line-height: 1.5;
-
-  color: #e9e5e5;
+  background-color: #828282b6;
+  color: #e6e8c7;
 }
 
 
